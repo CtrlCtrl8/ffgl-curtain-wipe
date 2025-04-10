@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+   project(CurtainWipe)
+   
+   add_library(CurtainWipe SHARED plugins/CurtainWipe.cpp)
+   target_include_directories(CurtainWipe PRIVATE ${CMAKE_SOURCE_DIR}/SDK)
+   target_link_libraries(CurtainWipe OpenGL)
